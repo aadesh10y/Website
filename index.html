@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        /* CSS */
+    </style>
+    <script>
+        //javaScript
+    </script>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <button class="btn" onclick="clickMe()">
+        Click Me
+    </button>
+    <button onclick="add()">
+        Add
+    </button>
+    <button onclick="checkAge()">
+        Check age
+    </button>
+    <button onclick="money()">
+        money
+    </button>
+    <button onclick="consolelog()">
+        Console Log
+    </button>
+    <br>
+    <br>
+
+    <script>
+        //function
+        //type name working
+        function clickMe(){
+            alert("Clicked")
+        }
+
+        function add(){
+            var x = prompt("Enter first number: ");
+            x = parseInt(x);
+            var y = prompt("Enter second number: ");
+            y = parseInt(y);
+            var sum = x+y;
+            alert("The sum is " + sum);
+        }
+        //check age
+        function checkAge(){
+            var age = prompt("Enter your age");
+            if(age < 18){
+                alert("you are kid");
+            } else if (age < 40) {
+                alert("You are adult");
+            } else{
+                alert("you are old")
+            }
+        }
+
+        //millionare, billionare, trillionare, broke
+        function money(){
+            var money = prompt("Enter your money");
+            if(money< 1000){
+                alert("you are broke");
+            } else if (money > 1000000) {
+                alert("You are millionare");
+            } else if(money > 100000000){
+                alert("you are billionare");
+            }  else{
+                alert("You are triollionare");
+            }
+        }
+
+        function consolelog(){
+            console.log("Hello World!");
+        }
+    
+
+
+        // NUmber data type
+        var myvariable = 5;
+        document.write(myvariable + "<br>");
+
+        // String data type
+        var myString = "Hello World!";
+        document.write(myString + "<br>");
+
+        //boolen, null and undefined
+        var myBoolen = true;
+        var myNull = null;
+        var myUndefined = undefined;
+
+        document.write(myBoolen + "<br>");
+        document.write(myNull + "<br>");
+        document.write(myUndefined + "<br>");
+
+        //Access The Current Date
+        document.write("<h1>Access The Current date</h1>")
+        var currentdate = new Date();
+        var getDate = currentdate.getFullYear();
+        document.write(getDate + "<br>");
+        document.write(currentdate + "<br>");
+
+        // math
+        document.write("<h1>MATH</h1>");
+        var x = 5;
+        var y = 5;
+        var z = Math.pow(x,y);
+        document.write(z + "<br>");
+
+        //random number
+        var randomNumber = Math.random() * 100000;
+        var justRandomNumber = Math.round(randomNumber);
+        document.write(randomNumber + "<br>");
+        document.write(justRandomNumber + "<br>");
+
+        //array
+
+        document.write("<h1>Array</h1>");
+        var myArray = [1,2,3,4,5]
+        var myStringArray = ["Football", "Cricket", "Baseball"]
+        document.write(myStringArray[1] + "<br>")
+        document.write(myArray[1] + "<br>")
+
+        //array object
+        // [{},{},{}]
+        document.write("<h1>Array Object</h1>");
+        //access data1
+        var data1 = {
+            name : "Aadesh",
+            age : 20,
+            hobbies : ["Football", "Boxing"]
+        }
+        document.write(data1.name + "<br>");
+        document.write(data1.hobbies[1] + "<br>");
+        
+
+        var studentData = [{
+            name: "Sujal",
+            age:18,
+            hobbies : ["Football", "Boxing"]
+        },{
+            name: "Salman",
+            age:19,
+            hobbies : ["music", "dancing"]
+        },{
+            name: "Ram",
+            age:20,
+            hobbies : ["Football", "Baseball"]
+        }]
+
+        document.write(studentData[2].hobbies[1]);
+        </script>
+
+    
+</body>
+</html>
